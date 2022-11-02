@@ -23,7 +23,20 @@ var (
 	f string
 )
 
+func banner() {
+	fmt.Println(`
+	              #                                        
+                      #                                        
+  ####   ###          ####   #   #  ####    ####   ####   #### 
+ #   #  #   #  #####  #   #  #   #  #   #  #   #  #      #     
+ #   #  #   #         #   #  #   #  #   #  #   #   ###    ###  
+  ####  #   #         #   #   ####  #   #  #  ##      #      # 
+     #   ###          ####       #  ####    ## #  ####   ####  
+  ###                         ###   #  
+	`)
+}
 func init() {
+	banner()
 	flag.BoolVar(&h, "h", false, "this help `message`")
 	flag.BoolVar(&v, "v", false, "show `version` and exit")
 
