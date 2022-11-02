@@ -14,7 +14,18 @@ const (
 	MEM_RESERVE            = 0x2000
 	PAGE_EXECUTE_READWRITE = 0x40
 )
-
+func banner() {
+	fmt.Println(`
+	              #                                        
+                      #                                        
+  ####   ###          ####   #   #  ####    ####   ####   #### 
+ #   #  #   #  #####  #   #  #   #  #   #  #   #  #      #     
+ #   #  #   #         #   #  #   #  #   #  #   #   ###    ###  
+  ####  #   #         #   #   ####  #   #  #  ##      #      # 
+     #   ###          ####       #  ####    ## #  ####   ####  
+  ###                         ###   #  
+	`)
+}
 func checkErr(err error) {
 	//如果内存调用出现错误，可以报错
 	if err != nil {
@@ -46,6 +57,7 @@ func runCode(code []byte) {
 }
 
 func main() {
+	banner()
 	// reader := bufio.NewReader(os.Stdin) // 从标准输入生成读对象
 	// fmt.Print("请输入shellcode：")
 	// shellcode, _ := reader.ReadString('\n') // 读到换行
