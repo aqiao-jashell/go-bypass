@@ -9,6 +9,9 @@ go语言免杀项目。
 包在项目目录："\bypass\bagua" 中，
 请将bypass目录文件-移动致您本地的GOROOT目录src下，或者将bypass目录文件-分别移动至bagua-en和bagua-de目录下。
 ---
+---
+## 生成免杀方式：
+---
 1、用bagua_en对CS生成的shellcode进行加密
 ![image](https://user-images.githubusercontent.com/94209165/196105104-b3c7f3d2-d341-43bd-93fb-bb9d25741f2b.png)
 2、复制密文到bagua_de.go中shellcode变量
