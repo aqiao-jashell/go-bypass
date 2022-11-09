@@ -2,6 +2,13 @@
 go语言免杀项目。
 声明：该项目来自作者日常学习笔记。 请勿利用相关技术以及工具从事非法测试，如因此产生的一切不良后果作者无关。
 ## 使用方式：
+---
+报错：`bagua-en.go:5:2: package bypass/bagua is not in GOROOT (C:\Program Files\Go\src\bypass\bagua)`
+
+解决：
+包在项目目录："\bypass\bagua" 中，
+请将bypass目录文件-移动致您本地的GOROOT目录src下，或者将bypass目录文件-分别移动至bagua-en和bagua-de目录下。
+---
 1、用bagua_en对CS生成的shellcode进行加密
 ![image](https://user-images.githubusercontent.com/94209165/196105104-b3c7f3d2-d341-43bd-93fb-bb9d25741f2b.png)
 2、复制密文到bagua_de.go中shellcode变量
