@@ -1,6 +1,9 @@
 # go-bypass
 go语言免杀项目。
 声明：该项目来自作者日常学习笔记。 请勿利用相关技术以及工具从事非法测试，如因此产生的一切不良后果作者无关。
+---
+#####  如果你觉得此项目对您有用，请给作者点个star
+---
 ## 使用方式：
 ---
 报错：`bagua-en.go:5:2: package bypass/bagua is not in GOROOT (C:\Program Files\Go\src\bypass\bagua)`
